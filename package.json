@@ -1,0 +1,14 @@
+{
+  "name": "advent-of-code",
+  "type": "module",
+  "version": "1.0.0",
+  "repository": "git@github.com:LumaLivy/advent-of-code.git",
+  "author": "LumaLivy <7350336+LumaLivy@users.noreply.github.com>",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "yargs": "^17.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0"
+  }
+}
