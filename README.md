@@ -3,9 +3,12 @@
 My [advent of code](https://adventofcode.com/2021/) 2021 submissions.
 
 ## Dependencies
-
-- [yargs](http://yargs.js.org/)
-- [chalk](https://github.com/chalk/chalk)
+- To run the solutions:
+  - [node](https://nodejs.org/en/) 
+  - [yargs](http://yargs.js.org/)
+  - [chalk](https://github.com/chalk/chalk)
+- To get linting info (if you're modifying the solutions):
+  - [eslint](https://eslint.org/)
 
 You can install them easily by running the following command from the project root directory:
 
