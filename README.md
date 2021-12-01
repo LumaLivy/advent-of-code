@@ -67,4 +67,4 @@ $ node 01/index.js --file ./01/custom_input.txt
 $ node 01/index.js --file "./01/I use spaces in my paths for some reason.txt"
 ```
 
-The standard naming convention I use for the input file is `input.txt`. If the default `input.txt` is found in a solution's folder (for example, `01/input.txt`), you may exclude the file flag.
+The standard naming convention I use for the input file is `input.txt`. If the default `input.txt` is found in a solution's folder (for example, `./01/input.txt`), you may exclude the file flag.
