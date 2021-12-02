@@ -1,20 +1,14 @@
 import chalk from "chalk";
 import yargs from "yargs";
 
-const colorize = (input) =>
-  input
-    .split(" ")
-    .map((v) => {
-      const trimmed = v.trim();
-      if (typeof parseInt(trimmed) === "number" && !isNaN(parseInt(trimmed))) {
-        return chalk.red(v);
-      }
-      if (v === "true" || v === "false") {
-        return chalk.green(v);
-      }
-      return chalk.white(v);
-    })
-    .join(" ");
+const colorize = (input) => {
+  let result = input;
+  result = result.replace(/\d+/g, (match) => chalk.red(match));
+  result = result.replace(/true|false/g, (match) => chalk.green(match));
+  return result;
+};
+
+console.log(colorize("this is true, this is false."));
 
 const pluralize = (word, occurances) => (occurances > 1 ? word + "s" : word);
 
@@ -31,6 +25,6 @@ const getArgs = (argv, solutionNumber) =>
     .alias("h", "help")
     .alias("v", "verbose")
     .alias("f", "file")
-    .default("f", "./01/input.txt").argv;
+    .default("f", `./${solutionNumber}/input.txt`).argv;
 
 export { colorize, pluralize, getArgs };
