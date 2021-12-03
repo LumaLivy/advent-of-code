@@ -3,12 +3,10 @@ import yargs from "yargs";
 
 const colorize = (input) => {
   let result = input;
-  result = result.replace(/\d+/g, (match) => chalk.red(match));
-  result = result.replace(/true|false/g, (match) => chalk.green(match));
+  result = result.replace(/(^|[^\w]+)+(\d+)/g, `$1${chalk.red("$2")}`);
+  result = result.replace(/true|false/g, chalk.green("$&"));
   return result;
 };
-
-console.log(colorize("this is true, this is false."));
 
 const pluralize = (word, occurances) => (occurances > 1 ? word + "s" : word);
 
