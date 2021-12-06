@@ -9,12 +9,12 @@ const verbose = argv.v;
 const file = argv.f;
 
 // Main function to calculate and display part one
-const partOne = (data, verbose) => {
+const partOne = (data) => {
   console.log("Todo");
 };
 
 // Main function to calculate and display part two
-const partTwo = (data, verbose) => {
+const partTwo = (data) => {
   console.log("Todo");
 };
 
