@@ -13,11 +13,11 @@ My [advent of code](https://adventofcode.com/2021/) 2021 submissions.
 You can install them easily by running the following command from the project root directory:
 
 ```
-yarn install
+$ yarn install
 
 or
 
-npm install
+$ npm install
 ```
 
 ## Running the Solutions
