@@ -37,8 +37,8 @@ const partTwo = (data) => {
     });
 
     // now we know 9 is the only 6 length number that contains all segments of 3, plus one (real segB)
-    const zeroOrsixOrNine = input.filter((n) => n.length === 6);
-    const nine = zeroOrsixOrNine.find((n) => {
+    const zeroOrSixOrNine = input.filter((n) => n.length === 6);
+    const nine = zeroOrSixOrNine.find((n) => {
       const split = n.split("");
       return three.split("").every((tl) => split.includes(tl));
     });
@@ -56,12 +56,12 @@ const partTwo = (data) => {
 
     // now that we know segD, we can find 0 (the only 6 length number without that segment)
 
-    const zero = zeroOrsixOrNine.find(
+    const zero = zeroOrSixOrNine.find(
       (n) => n !== nine && !n.split("").includes(segD)
     );
 
     // by consequence of finding 0 and 9, we know 6 is the remaining 6 length number
-    const six = zeroOrsixOrNine.find((n) => ![zero, nine].includes(n));
+    const six = zeroOrSixOrNine.find((n) => ![zero, nine].includes(n));
 
     // we can find 5 by subtracting the segments of 1 from 4, and then finding the intersection of that result with one of the numbers in the remaining list
     const twoOrFive = input.filter((n) => n !== three && n.length === 5);
