@@ -10,11 +10,13 @@ const file = argv.f;
 
 // Main function to calculate and display part one
 const partOne = (data) => {
+  const cleaned = processData(data);
   console.log("Todo");
 };
 
 // Main function to calculate and display part two
 const partTwo = (data) => {
+  const cleaned = processData(data);
   console.log("Todo");
 };
 
@@ -28,11 +30,10 @@ const processData = (data) =>
 const main = () => {
   fs.readFile(file, "utf8", (err, data) => {
     if (err) return console.log(err);
-    const cleaned = processData(data);
     if (verbose) console.log("---\nBeginning calcuation of part one:\n---");
-    const res1 = partOne(cleaned, verbose);
+    const res1 = partOne(data);
     if (verbose) console.log("---\nBeginning calcuation of part two:\n---");
-    const res2 = partTwo(cleaned, verbose);
+    const res2 = partTwo(data);
 
     if (verbose) console.log("---\nResults:\n---");
     console.log("Part One:", res1);
