@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "fs";
 import process from "process";
-import { getArgs, colorize } from "../shared/utils.js";
+import { getArgs } from "../shared/utils.js";
 
 const argv = getArgs(process.argv.slice(2), "13");
 
@@ -16,7 +16,6 @@ const partOne = (data) => {
   const folds = cleaned.filter((p) => typeof p[0] !== "number");
 
   const folded = [dots];
-
   folds.forEach((f) => {
     const latest = folded[folded.length - 1];
     const [dir, place] = f;
