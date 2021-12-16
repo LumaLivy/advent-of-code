@@ -7,6 +7,8 @@ My [advent of code](https://adventofcode.com/2021/) 2021 submissions.
   - [node](https://nodejs.org/en/) 
   - [yargs](http://yargs.js.org/)
   - [chalk](https://github.com/chalk/chalk)
+  - [ngraph.path](https://github.com/anvaka/ngraph.path)
+  - [ngraph.graph](https://github.com/anvaka/ngraph.graph)
 - To get linting info (if you're modifying the solutions):
   - [eslint](https://eslint.org/)
 
