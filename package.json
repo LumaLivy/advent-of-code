@@ -6,6 +6,8 @@
   "author": "LumaLivy <7350336+LumaLivy@users.noreply.github.com>",
   "dependencies": {
     "chalk": "^5.0.0",
+    "ngraph.graph": "^19.1.0",
+    "ngraph.path": "^1.3.1",
     "yargs": "^17.3.0"
   },
   "devDependencies": {
