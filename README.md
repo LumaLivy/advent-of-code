@@ -37,7 +37,7 @@ $ ./2021/01/index.js
 When using the `./` syntax, you may need to `chmod` the file first:
 
 ```
-$ chmod +x ./01/index.js
+$ chmod +x ./2021/01/index.js
 ```
 
 This will allow you to execute the file as your user.
