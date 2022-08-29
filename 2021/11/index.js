@@ -2,9 +2,9 @@
 import chalk from "chalk";
 import fs from "fs";
 import process from "process";
-import { getArgs } from "../shared/utils.js";
+import { getArgs } from "../../shared/utils.js";
 
-const argv = getArgs(process.argv.slice(2), "11");
+const argv = getArgs(process.argv.slice(2), "2021", "11");
 
 const verbose = argv.v;
 const file = argv.f;

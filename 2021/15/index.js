@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 import fs from "fs";
 import process from "process";
-import { getArgs, colorize } from "../shared/utils.js";
+import { getArgs, colorize } from "../../shared/utils.js";
 
 import path from "ngraph.path";
 import graph from "ngraph.graph";
 
-const argv = getArgs(process.argv.slice(2), "15");
+const argv = getArgs(process.argv.slice(2), "2021", "15");
 
 const verbose = argv.v;
 const file = argv.f;

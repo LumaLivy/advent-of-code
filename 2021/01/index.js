@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import fs from "fs";
 import process from "process";
-import { getArgs, colorize, pluralize } from "../shared/utils.js";
+import { getArgs, colorize, pluralize } from "../../shared/utils.js";
 
-const argv = getArgs(process.argv.slice(2), "01");
+const argv = getArgs(process.argv.slice(2), "2021", "01");
 
 const verbose = argv.v;
 const file = argv.f;
