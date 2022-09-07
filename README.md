@@ -1,6 +1,6 @@
 # advent-of-code
 
-My [advent of code](https://adventofcode.com/2021/) 2021 submissions.
+My [advent of code](https://adventofcode.com/) submissions.
 
 ## Dependencies
 - To run the solutions:
@@ -65,11 +65,11 @@ This usually means any intermediate calculations or values will be shown in the 
 Specifies a custom file for the solution to process. Your path should be relative to the root directory. Spaces in the path are fine, just wrap it with quotes! For example:
 
 ```
-$ node 2021/01/index.js --file ./01/custom_input.txt
+$ node 2021/01/index.js --file ./2021/01/custom_input.txt
 
 ...
 
-$ node 2021/01/index.js --file "./01/I use spaces in my paths for some reason.txt"
+$ node 2021/01/index.js --file "./2021/01/I use spaces in my paths for some reason.txt"
 ```
 
 The standard naming convention I use for the input file is `input.txt`. If the default `input.txt` is found in a solution's folder (for example, `./01/input.txt`), you may exclude the file flag.
