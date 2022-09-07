@@ -8,15 +8,6 @@ const argv = getArgs(process.argv.slice(2), "2021", "17");
 const verbose = argv.v;
 const file = argv.f;
 
-// I wrote this because I wasn't sure if I'd need math sum notation of an algebraic function. applying (i) => i to the func just sums up all the numbers between start and end
-const sumFunc = (start, end, func) => {
-  let res = 0;
-  for (let i = start; i < end; i++) {
-    res += func(i);
-  }
-  return res;
-};
-
 // Main function to calculate and display part one
 const partOne = (data) => {
   const [[xMin, xMax], [yMin, yMax]] = processData(data);
