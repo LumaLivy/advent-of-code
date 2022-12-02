@@ -34,18 +34,18 @@ const partTwo = (data) => {
     const conditionScores = { X: 0, Y: 3, Z: 6 }; // loss, draw, win
 
     const playerChoice = {
-      A: ["Z", "X", "Y"], // loss, draw, win
-      B: ["X", "Y", "Z"],
-      C: ["Y", "Z", "X"],
+      A: [shapeScores.Z, shapeScores.X, shapeScores.Y], // loss, draw, win
+      B: [shapeScores.X, shapeScores.Y, shapeScores.Z],
+      C: [shapeScores.Y, shapeScores.Z, shapeScores.X],
     };
 
-    const strategies = {
+    const resultScores = {
       X: playerChoice[opponent][0], // loss
       Y: playerChoice[opponent][1], // draw
       Z: playerChoice[opponent][2], // win
     };
 
-    return conditionScores[condition] + shapeScores[strategies[condition]];
+    return conditionScores[condition] + resultScores[condition];
   };
 
   const cleaned = processData(data);
